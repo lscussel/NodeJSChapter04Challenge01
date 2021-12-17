@@ -29,9 +29,9 @@ describe("Show User Profile", () => {
       password: "123456"
     });
 
-    const user_id = user.user.id;
-
-    //const result = await showUserProfileUseCase.execute(user_id);
+    const user_id = user.user.id as string;
+    const result = await showUserProfileUseCase.execute(user_id);
+    expect(result).toHaveProperty("password");
   });
 
 });
