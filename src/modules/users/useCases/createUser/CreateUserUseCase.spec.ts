@@ -1,6 +1,6 @@
 import { InMemoryUsersRepository } from "@modules/users/repositories/in-memory/InMemoryUsersRepository";
 import { CreateUserUseCase } from "@modules/users/useCases/createUser/CreateUserUseCase";
-import { CreateUserError } from "./CreateUserError";
+import { CreateUserError } from "@modules/users/useCases/createUser/CreateUserError";
 
 let inMemoryUsersRepository: InMemoryUsersRepository;
 let createUserUseCase: CreateUserUseCase;
