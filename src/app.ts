@@ -10,6 +10,9 @@ import './shared/container';
 import { router } from './routes';
 import { AppError } from './shared/errors/AppError';
 
+import createConnection from "./database/index";
+
+createConnection();
 const app = express();
 
 app.use(cors());

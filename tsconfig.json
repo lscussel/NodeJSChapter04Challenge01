@@ -12,6 +12,7 @@
     "baseUrl": "./src",
     "paths": {
       "@config/*": ["config/*"],
+      "@database/*": ["database/*"],
       "@modules/*": ["modules/*"],
       "@shared/*": ["shared/*"]
     },
