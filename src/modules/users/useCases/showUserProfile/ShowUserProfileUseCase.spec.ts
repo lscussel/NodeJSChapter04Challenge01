@@ -37,7 +37,7 @@ describe("Show User Profile", () => {
   it("Should not be possible to show an nonexistent user's profile", async () => {
     expect(async () => {
       const user_id = "nonexistent";
-      const result = await showUserProfileUseCase.execute(user_id);
+      await showUserProfileUseCase.execute(user_id);
     }).rejects.toBeInstanceOf(ShowUserProfileError);
   });
 
