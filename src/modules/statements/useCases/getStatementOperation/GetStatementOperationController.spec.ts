@@ -6,7 +6,7 @@ import createConnection from "@database/index";
 
 let connection: Connection;
 
-describe("Create Statement Controller", () => {
+describe("Get Statement Operation Controller", () => {
   beforeAll(async () => {
     connection = await createConnection();
     await connection.runMigrations();
@@ -24,7 +24,7 @@ describe("Create Statement Controller", () => {
     await connection.close();
   });
 
-  it("Should be possible to make a deposit to the authenticated user's account", async () => {
+  it("", async () => {
     const response = await request(app).post("/api/v1/sessions")
     .send({
       email: "supertest@teste.com.br",
@@ -33,15 +33,7 @@ describe("Create Statement Controller", () => {
     const { token } = response.body;
   });
 
-  it("Should be possible to make a withdraw from an authenticated user's account with balance", async () => {
-
-  });
-
-  it("Should not be possible to make a withdraw from an authenticated user's account without balance", async () => {
-
-  });
-
-  it("Should not be possible to make any operacion from a nonexistent user", async () => {
+  it("", async () => {
 
   });
 });
